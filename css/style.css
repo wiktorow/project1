@@ -1,0 +1,65 @@
+@import url('reset.css');
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 200vh;
+
+}
+header {
+    background: url('../assets/img/bg-header.jpg') center/cover fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+header::after {
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.531);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 150%;
+    z-index: 1;
+    flex-basis: 10%;
+}
+header a {
+    color: inherit;
+    text-decoration: none;
+    z-index: 1;
+    background-color: #520100;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* text-align: center;
+    line-height: 80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a:hover {
+    background-color: #640204;
+    transition-duration: 1s;
+}
+h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+@media all and (min-width: 700px) {
+    h1{
+        font-size: 4rem;
+    }
+}
+@media all and (min-width: 2000px) {
+    h1 {
+        font-size: 9rem;
+    }
+}
