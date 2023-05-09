@@ -17,6 +17,8 @@ header {
         font-size: 2rem;
         text-align: center;
         line-height: 150%;
+        z-index: 1;
+        flex-basis: 10%;
     }
 }
 header::after {
@@ -50,8 +52,6 @@ h2 {
     text-align: center;
     color: white;
     text-shadow: 0 0 10px black;
-    z-index: 1;
-    flex-basis: 10%;
 }
 
 @media all and (min-width: 700px) {
